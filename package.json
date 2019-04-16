@@ -12,12 +12,20 @@
   },
   "author": "Omkar",
   "license": "MIT",
+  "preferGlobal": "true",
+  "bin": {
+    "sports-cli": "./bin/cli.js"
+  },
+  "engines": {
+    "node": ">= 7.6"
+  },
   "bugs": {
     "url": "https://github.com/omkarnath1123/sports-cli/issues"
   },
   "homepage": "https://github.com/omkarnath1123/sports-cli#readme",
   "dependencies": {
     "puppeteer": "^1.14.0",
+    "semver": "^6.0.0",
     "yargs": "^13.2.2"
   }
 }
