@@ -1,0 +1,23 @@
+{
+  "name": "sports-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sports-cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omkarnath1123/sports-cli.git"
+  },
+  "author": "Omkar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omkarnath1123/sports-cli/issues"
+  },
+  "homepage": "https://github.com/omkarnath1123/sports-cli#readme",
+  "dependencies": {
+    "puppeteer": "^1.14.0",
+    "yargs": "^13.2.2"
+  }
+}
