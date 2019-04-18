@@ -1,0 +1,254 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/omkarnath/Desktop
+
+  # Export additional ENV variables
+  env:
+    recording: true
+
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 140
+
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 33
+
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+
+  # Quality
+  # 1 - 100
+  quality: 100
+
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Omkar-Macbook
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+
+  # The size of the font
+  fontSize: 12
+
+  # The height of lines
+  lineHeight: 1
+
+  # The spacing between letters
+  letterSpacing: 0
+
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+
+# Records, feel free to edit them
+records:
+  - delay: 2723
+    content: "\e]7;file://Omkar-Macbook.local/Users/omkarnath/Desktop\a\e[?1034hOmkar-Macbook:Desktop omkarnath$ "
+  - delay: 838
+    content: sports-cli --sport="cricket"
+  - delay: 691
+    content: "\r\n"
+  - delay: 735
+    content: "\e[2K\e[1Gprocessing your request for cricket .... |"
+  - delay: 66
+    content: "\e[2K\e[1Gprocessing your request for cricket .... /"
+  - delay: 60
+    content: "\e[2K\e[1Gprocessing your request for cricket .... -"
+  - delay: 61
+    content: "\e[2K\e[1Gprocessing your request for cricket .... \\"
+  - delay: 61
+    content: "\e[2K\e[1Gprocessing your request for cricket .... |"
+  - delay: 67
+    content: "\e[2K\e[1Gprocessing your request for cricket .... /"
+  - delay: 64
+    content: "\e[2K\e[1Gprocessing your request for cricket .... -"
+  - delay: 57
+    content: "\e[2K\e[1Gprocessing your request for cricket .... \\"
+  - delay: 60
+    content: "\e[2K\e[1Gprocessing your request for cricket .... |"
+  - delay: 61
+    content: "\e[2K\e[1Gprocessing your request for cricket .... /"
+  - delay: 63
+    content: "\e[2K\e[1Gprocessing your request for cricket .... -"
+  - delay: 65
+    content: "\e[2K\e[1Gprocessing your request for cricket .... \\"
+  - delay: 63
+    content: "\e[2K\e[1Gprocessing your request for cricket .... |"
+  - delay: 61
+    content: "\e[2K\e[1Gprocessing your request for cricket .... /"
+  - delay: 60
+    content: "\e[2K\e[1Gprocessing your request for cricket .... |"
+  - delay: 59
+    content: "\e[2K\e[1Gprocessing your request for cricket .... /"
+  - delay: 60
+    content: "\e[2K\e[1Gprocessing your request for cricket .... -"
+  - delay: 61
+    content: "\e[2K\e[1Gprocessing your request for cricket .... \\"
+  - delay: 60
+    content: "\e[2K\e[1Gprocessing your request for cricket .... |"
+  - delay: 60
+    content: "\e[2K\e[1Gprocessing your request for cricket .... -"
+  - delay: 41
+    content: "\r\n\r\n\e[32mTOP EVENTS\e[39m\r\n"
+  - delay: 28
+    content: "status : \e[33m08:00 PM IST\e[39m\r\nvenue : \e[36m34th Match (N), Indian Premier League at Delhi, Apr 18 2019\e[39m\r\n"
+  - delay: 15
+    content: "\e[35mDelhi Capitals\e[39m\r\n\e[35mMumbai Indians\e[39m\r\n\e[90mMatch scheduled to begin at 20:00 local time (14:30 GMT)\e[39m\r\n"
+  - delay: 20
+    content: "status : \e[33mRESULT\e[39m\r\nvenue : \e[36m33rd Match (N), Indian Premier League at Hyderabad, Apr 17 2019\e[39m\r\n"
+  - delay: 9
+    content: "\e[35mChennai Super Kings\t132/5\e[39m\r\n\e[35mSunrisers Hyderabad\t137/4 (16.5/20 ov, target 133)\e[39m\r\n"
+  - delay: 5
+    content: "\e[90mSunrisers won by 6 wickets (with 19 balls remaining)\e[39m\r\n"
+  - delay: 9
+    content: "status : \e[33mRESULT\e[39m\r\nvenue : \e[36m13th Match, ICC Asia Under-19s World Cup Qualifier at Kuala Lumpur, Apr 18 2019\e[39m\r\n"
+  - delay: 10
+    content: "\e[35mKuwait Under-19s\t157\e[39m\r\n\e[35mNepal Under-19s\t160/2 (28/50 ov, target 158)\e[39m\r\n\e[90mNepal U19 won by 8 wickets (with 132 balls remaining)\e[39m\r\n\r\n\r\n\e[32mSOUTH AFRICA DOMESTIC T20/PRO20\e[39m\r\n"
+  - delay: 21
+    content: "status : \e[33m09:30 PM IST\e[39m\r\nvenue : \e[36m15th Match, (D/N) at Johannesburg, Apr 18 2019\e[39m\r\n"
+  - delay: 9
+    content: "\e[35mLions\e[39m\r\n\e[35mTitans\e[39m\r\n\e[90mMatch scheduled to begin at 18:00 local time (16:00 GMT)\e[39m\r\n\r\n\r\n\e[32mMYANMAR WOMEN TOUR OF SINGAPORE 2019\e[39m\r\n"
+  - delay: 67
+    content: "status : \e[33mLIVE\e[39m\r\nvenue : \e[36m1st T20I, at Singapore, Apr 18 2019\e[39m\r\n"
+  - delay: 8
+    content: "\e[35mSingapore Women\e[39m\r\n\e[35mMyanmar Women\e[39m\r\n\e[90mMatch scheduled to begin at 10:00 local time (02:00 GMT)\e[39m\r\n\r\n\r\n\e[32mAHMAD SHAH ABDALI FIRST-CLASS TROPHY\e[39m\r\n"
+  - delay: 10
+    content: "status : \e[33mLIVE\e[39m\r\nvenue : \e[36m7th Match, at Amanullah, Apr 16-19 2019\e[39m\r\n"
+  - delay: 9
+    content: "\e[35mBand-e-Amir Region\t114\e[39m\r\n\e[35mBoost Region\t71/3 * (22 ov)\e[39m\r\n"
+  - delay: 6
+    content: "\e[90mDay 3: Boost Region trail by 43 runs with 7 wickets remaining in the innings\e[39m\r\n"
+  - delay: 20
+    content: "status : \e[33mMATCH DELAYED - WET OUTFIELD\e[39m\r\nvenue : \e[36m8th Match, at Kabul, Apr 16-19 2019\e[39m\r\n"
+  - delay: 12
+    content: "\e[35mAmo Region\e[39m\r\n\e[35mKabul\e[39m\r\n"
+  - delay: 5
+    content: "\e[90mDay 3: Match scheduled to begin at 09:30 local time (05:00 GMT)\e[39m\r\n"
+  - delay: 9
+    content: "status : \e[33mLIVE\e[39m\r\nvenue : \e[36m9th Match, at Kunar, Apr 16-19 2019\e[39m\r\n"
+  - delay: 8
+    content: "\e[35mMis Ainak Region\t181/4 * (39 ov)\e[39m\r\n\e[35mSpeen Ghar Region\e[39m\r\n\e[90mDay 3: Speen Ghar Region won the toss and elected to field\e[39m\r\n"
+  - delay: 5
+    content: "\r\n\r\n\e[32mPREMIER LEAGUE TOURNAMENT TIER B\e[39m\r\n"
+  - delay: 12
+    content: "status : \e[33mTEA\e[39m\r\nvenue : \e[36mat Kaluthara, Apr 17-19 2019\e[39m\r\n"
+  - delay: 8
+    content: "\e[35mLankan Cricket Club\t334\e[39m\r\n\e[35mGalle Cricket Club\t26/0 * (6 ov)\e[39m\r\n\e[90mDay 2: Galle Cricket Club trail by 308 runs with 10 wickets remaining in the innings\e[39m\r\n"
+  - delay: 12
+    content: "status : \e[33mLIVE\e[39m\r\nvenue : \e[36mat Katunayake, Apr 17-19 2019\e[39m\r\n"
+  - delay: 7
+    content: "\e[35mPolice Sports Club\t398\e[39m\r\n\e[35mSri Lanka Air Force Sports Club\t28/1 * (12.4 ov)\e[39m\r\n"
+  - delay: 10
+    content: "\e[90mDay 2: Sri Lanka Air Force Sports Club trail by 370 runs with 9 wickets remaining in the innings\e[39m\r\n\r\n\r\n\e[32mDHAKA PREMIER DIVISION\e[39m\r\n"
+  - delay: 11
+    content: "status : \e[33mRESULT\e[39m\r\nvenue : \e[36mRelegation League, at Fatullah, Apr 18 2019\e[39m\r\n"
+  - delay: 13
+    content: "\e[35mBangladesh Krira Shikkha Protisthan\t144\e[39m\r\n\e[35mUttara Sporting Club\t147/9 (39.5/50 ov, target 145)\e[39m\r\n\e[90mUttara Sport won by 1 wicket (with 61 balls remaining)\e[39m\r\n\r\n\r\n\e[32mSECOND ELEVEN CHAMPIONSHIP\e[39m\r\n"
+  - delay: 13
+    content: "status : \r\nvenue : \e[36mSouth Division, at High Wycombe, Apr 16-18 2019\e[39m\r\n"
+  - delay: 7
+    content: "\e[35mMarylebone Cricket Club Young Cricketers\e[39m\r\n\e[35mKent 2nd XI\e[39m\r\n"
+  - delay: 5
+    content: "\e[90mMatch scheduled to begin at 11:00 local time (10:00 GMT)\e[39m\r\n"
+  - delay: 8
+    content: "status : \r\nvenue : \e[36mNorth Division, at Northampton, Apr 17-19 2019\e[39m\r\n"
+  - delay: 8
+    content: "\e[35mNorthamptonshire 2nd XI\e[39m\r\n\e[35mNottinghamshire 2nd XI\e[39m\r\n"
+  - delay: 6
+    content: "\e[90mMatch scheduled to begin at 11:00 local time (10:00 GMT)\e[39m\r\n"
+  - delay: 11
+    content: "\r\n\r\n\e[32mICC ASIA UNDER-19S WORLD CUP QUALIFIER\e[39m\r\n"
+  - delay: 47
+    content: "status : \e[33mRESULT\e[39m\r\nvenue : \e[36m15th Match, at Kuala Lumpur, Apr 18 2019\e[39m\r\n"
+  - delay: 9
+    content: "\e[35mSingapore Under-19s\t141\e[39m\r\n\e[35mMalaysia Under-19s\t142/6 (29.5/50 ov, target 142)\e[39m\r\n"
+  - delay: 5
+    content: "\e[90mMalaysia U19 won by 4 wickets (with 121 balls remaining)\e[39m\r\n"
+  - delay: 9
+    content: "status : \e[33mRESULT\e[39m\r\nvenue : \e[36m14th Match, at Kuala Lumpur, Apr 18 2019\e[39m\r\n"
+  - delay: 9
+    content: "\e[35mOman Under-19s\t105\e[39m\r\n\e[35mUnited Arab Emirates Under-19s\t110/0 (12.1/50 ov, target 106)\e[39m\r\n"
+  - delay: 5
+    content: "\e[90mUAE U19 won by 10 wickets (with 227 balls remaining)\e[39m\r\n"
+  - delay: 6
+    content: "\r\n\r\n\e[32mSECOND ELEVEN TROPHY\e[39m\r\n"
+  - delay: 17
+    content: "status : \r\nvenue : \e[36mNorth Division, at Solihull, Apr 18 2019\e[39m\r\n"
+  - delay: 8
+    content: "\e[35mWarwickshire 2nd XI\e[39m\r\n\e[35mWorcestershire 2nd XI\e[39m\r\n\e[90mMatch scheduled to begin at 11:00 local time (10:00 GMT)\e[39m\r\n"
+  - delay: 16
+    content: "status : \r\nvenue : \e[36mNorth Division, at Scarborough, Apr 18 2019\e[39m\r\n"
+  - delay: 10
+    content: "\e[35mYorkshire 2nd XI\e[39m\r\n\e[35mLancashire 2nd XI\e[39m\r\n"
+  - delay: 10
+    content: "\e[90mMatch scheduled to begin at 11:00 local time (10:00 GMT)\e[39m\r\n"
+  - delay: 400
+    content: "\e]7;file://Omkar-Macbook.local/Users/omkarnath/Desktop\aOmkar-Macbook:Desktop omkarnath$ "
