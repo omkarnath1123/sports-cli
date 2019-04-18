@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/omkarnath1123/sports-cli#readme",
   "dependencies": {
+    "chalk": "^2.4.2",
+    "cli-spinner": "^0.2.10",
     "puppeteer": "^1.14.0",
     "semver": "^6.0.0",
     "yargs": "^13.2.2"
