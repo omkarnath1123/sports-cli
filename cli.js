@@ -4,6 +4,8 @@
 const packageJSON = require("./package.json");
 const semver = require("semver");
 const yargs = require("yargs");
+const chalk = require("chalk");
+const log = console.log;
 
 yargs
   .options({
@@ -42,7 +44,8 @@ if (!sport) {
 }
 
 if (node_env) {
-  console.log("\x1b[31m", "[NODE ENV] : ","\x1b[37m", "development");
+  log(chalk.blue("only add flag node environment for development purposes !!"));
+  log(chalk.red("[NODE ENV] : ") + chalk.yellow("development"));
   process.env.NODE_ENV = node_env;
 }
 
