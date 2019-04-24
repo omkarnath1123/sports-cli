@@ -252,3 +252,31 @@ records:
     content: "\e[90mMatch scheduled to begin at 11:00 local time (10:00 GMT)\e[39m\r\n"
   - delay: 400
     content: "\e]7;file://Omkar-Macbook.local/Users/omkarnath/Desktop\aOmkar-Macbook:Desktop omkarnath$ "
+  - delay: 1547
+    content: sports-cli --sport="football"
+  - delay: 811
+    content: "\r\n"
+  - delay: 770
+    content: "\e[2K\e[1Gprocessing your request for football .... |"
+  - delay: 62
+    content: "\e[2K\e[1Gprocessing your request for football .... /"
+  - delay: 64
+    content: "\e[2K\e[1Gprocessing your request for football .... -"
+  - delay: 62
+    content: "\e[2K\e[1Gprocessing your request for football .... \\"
+  - delay: 60
+    content: "\e[2K\e[1Gprocessing your request for football .... |"
+  - delay: 60
+    content: "\e[2K\e[1Gprocessing your request for football .... /"
+  - delay: 60
+    content: "\e[2K\e[1Gprocessing your request for football .... -"
+  - delay: 60
+    content: "\e[2K\e[1Gprocessing your request for football .... -"
+  - delay: 61
+    content: "\e[2K\e[1Gprocessing your request for football .... \\"
+  - delay: 61
+    content: "\e[2K\e[1Gprocessing your request for football .... |"
+  - delay: 55
+    content: "\r\n\r\n\e[32mENGLISH PREMIER LEAGUE\e[39m\r\n\e[35mWolverhampton Wanderers\e[39m\t\e[36mForm: DLLWL\e[39m\r\n\e[35mArsenal\e[39m\t\e[36mForm: LWWWL\e[39m\r\nscore : \e[33m25/4\e[39m\r\ngame time : \e[90m12:15 AM\e[39m\r\n\e[35mManchester United\e[39m\t\e[36mForm: LLWLL\e[39m\r\n\e[35mManchester City\e[39m\t\e[36mForm: WWWLW\e[39m\r\nscore : \e[33m25/4\e[39m\r\ngame time : \e[90m12:30 AM\e[39m\r\n\r\n\r\n\e[32mSPANISH PRIMERA DIVISIÓN\e[39m\r\n\e[35mAtletico Madrid\e[39m\t\e[36mForm: WWLWW\e[39m\r\n\e[35mValencia\e[39m\t\e[36mForm: WWWWL\e[39m\r\nscore : \e[33m24/4\e[39m\r\ngame time : \e[90m11:00 PM\e[39m\r\n\e[35mEspanyol\e[39m\t\e[36mForm: DWWDL\e[39m\r\n\e[35mCelta Vigo\e[39m\t\e[36mForm: WLWDW\e[39m\r\nscore : \e[33m25/4\e[39m\r\ngame time : \e[90m12:00 AM\e[39m\r\n\e[35mLeganes\e[39m\t\e[36mForm: LDDWW\e[39m\r\n\e[35mAthletic Bilbao\e[39m\t\e[36mForm: LWLWW\e[39m\r\nscore : \e[33m25/4\e[39m\r\ngame time : \e[90m12:00 AM\e[39m\r\n\e[35mLevante\e[39m\t\e[36mForm: DLDLD\e[39m\r\n\e[35mReal Betis\e[39m\t\e[36mForm: LLWLD\e[39m\r\nscore : \e[33m25/4\e[39m\r\ngame time : \e[90m1:00 AM\e[39m\r\n\r\n\r\n\e[32mITALIAN COPPA ITALIA\e[39m\r\n\e[35mAC Milan\e[39m\t\e[36mForm: DWLDL\e[39m\r\n\e[35mAgg. 0-0\e[39m\t\e[36mLazio\e[39m\r\nscore : \e[33m25/4\e[39m\r\ngame time : \e[90m12:15 AM\e[39m\r\n\r\n\r\n\e[32mGERMAN DFB POKAL\e[39m\r\n\e[35mWerder Bremen\e[39m\t\e[36mForm: LWDWW\e[39m\r\n\e[35mBayern Munich\e[39m\t\e[36mForm: WWWWD\e[39m\r\nscore : \e[33m25/4\e[39m\r\ngame time : \e[90m12:15 AM\e[39m\r\n\r\n\r\n\e[32mMAJOR LEAGUE SOCCER\e[39m\r\n\e[35mNew York City FC\e[39m\t\e[36mForm: WDDLD\e[39m\r\n\e[35mChicago Fire\e[39m\t\e[36mForm: WDDWL\e[39m\r\nscore : \e[33m25/4\e[39m\r\ngame time : \e[90m4:30 AM\e[39m\r\n\e[35mColumbus Crew SC\e[39m\t\e[36mForm: LLWWL\e[39m\r\n\e[35mDC United\e[39m\t\e[36mForm: LWDLW\e[39m\r\nscore : \e[33m25/4\e[39m\r\ngame time : \e[90m5:00 AM\e[39m\r\n\e[35mNew England Revolution\e[39m\t\e[36mForm: WLLWL\e[39m\r\n\e[35mMontreal Impact\e[39m\t\e[36mForm: LWDDL\e[39m\r\nscore : \e[33m25/4\e[39m\r\ngame time : \e[90m5:00 AM\e[39m\r\n\e[35mMinnesota United FC\e[39m\t\e[36mForm: LDWLL\e[39m\r\n\e[35mLA Galaxy\e[39m\t\e[36mForm: WWWWW\e[39m\r\nscore : \e[33m25/4\e[39m\r\ngame time : \e[90m5:30 AM\e[39m\r\n\e[35mSeattle Sounders FC\e[39m\t\e[36mForm: LWWDW\e[39m\r\n\e[35mSan Jose Earthquakes\e[39m\t\e[36mForm: WLWLL\e[39m\r\nscore : \e[33m25/4\e[39m\r\ngame time : \e[90m8:00 AM\e[39m\r\n\r\n\r\n\e[32mDUTCH EREDIVISIE\e[39m\r\n\e[35mFC Utrecht\e[39m\t\e[36mForm: LDLWW\e[39m\r\n\e[35mFortuna Sittard\e[39m\t\e[36mForm: WDLDL\e[39m\r\nscore : \e[33m24/4\e[39m\r\ngame time : \e[90m11:15 PM\e[39m\r\n\e[35mPEC Zwolle\e[39m\t\e[36mForm: LLWLW\e[39m\r\n\e[35mFC Groningen\e[39m\t\e[36mForm: LDWWL\e[39m\r\nscore : \e[33m24/4\e[39m\r\ngame time : \e[90m11:15 PM\e[39m\r\n\e[35mNAC Breda\e[39m\t\e[36mForm: LDLWD\e[39m\r\n\e[35mFeyenoord Rotterdam\e[39m\t\e[36mForm: WWWWL\e[39m\r\nscore : \e[33m25/4\e[39m\r\ngame time : \e[90m12:15 AM\e[39m\r\n"
+  - delay: 1547
+    content: "\e]7;file://Omkar-Macbook.local/Users/omkarnath/Desktop\aOmkar-Macbook:Desktop omkarnath$ "
