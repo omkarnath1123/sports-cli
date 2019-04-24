@@ -8,6 +8,7 @@ if (!process.env.NODE_ENV) {
 }
 
 async function main(sport) {
+  let browserInstance;
   try {
     let spinner = new Spinner(`processing your request for ${sport} .... %s`);
     spinner.setSpinnerString("|/-\\");
@@ -17,28 +18,70 @@ async function main(sport) {
     if (sport === "cricket") {
       url = "http://www.espncricinfo.com/scores/";
     } else if (sport === "football") {
+      url = "http://www.espn.in/football/scoreboard";
     }
-
-    let browserInstance = new Puppeteer();
+    browserInstance = new Puppeteer();
     let page = await browserInstance.openWebPage(url, env);
 
+    spinner.stop();
     if (sport === "cricket") {
-      spinner.stop();
-      await Scores(page);
+      await cricketScores(page);
+    } else if (sport === "football") {
+      await footballScores(page);
     }
 
     await browserInstance.close();
+    browserInstance = null;
   } catch (error) {
+    if (browserInstance) {
+      await browserInstance.close();
+    }
     console.error(error);
   }
 }
 
 async function Commentry() { }
 
-async function Scores(page) {
+async function footballScores(page) {
+
+  // events
+  let events = await page.evaluate(() => {
+    let eventsObject = document.getElementById('events').children;
+    let eventsArray = [];
+    for (key in eventsObject) { eventsArray.push(eventsObject[key].innerText) }
+    return eventsArray;
+  });
+  for (let i = 0; i < events.length; i++) {
+    let innerText = events[i];
+    if (typeof innerText !== "string") {
+      continue;
+    }
+
+    if (innerText.match(/summary/i)) {
+      // event
+      innerText = innerText.trim().split('\n');
+      innerText.pop();
+      innerText.pop();
+      // innerText = innerText.toString().replace('/,/g', ' ');
+      log(chalk.magenta(innerText[0]) + '\t' + chalk.yellow(innerText[1]));
+      log(chalk.magenta(innerText[4]) + '\t' + chalk.yellow(innerText[5]));
+      log('score : ' + chalk.cyan(innerText[2]));
+      log('game time : ' + chalk.gray(innerText[3]));
+    } else {
+      // event heading
+      console.log("\n");
+      innerText = innerText.trim().toUpperCase();
+      log(chalk.green(innerText));
+    }
+  }
+}
+
+async function cricketScores(page) {
+
   // series
   let events = await page.$$(".scoreCollection.cricket");
   for (let i = 0; i < events.length; i++) {
+
     // heading
     let heading = await events[i].$eval(".scoreCollection__header", node => node.innerText);
     heading = heading.trim();
