@@ -16,7 +16,7 @@ async function main(sport) {
     const env = process.env.NODE_ENV;
     let url = "http://www.espncricinfo.com/scores/";
     if (sport === "cricket") {
-      url = "http://www.espncricinfo.com/scores/";
+      url = "http://www.espn.in/cricket/scores";
     } else if (sport === "football") {
       url = "http://www.espn.in/football/scoreboard";
     }
@@ -63,9 +63,9 @@ async function footballScores(page) {
       innerText.pop();
       innerText.pop();
       // innerText = innerText.toString().replace('/,/g', ' ');
-      log(chalk.magenta(innerText[0]) + '\t' + chalk.yellow(innerText[1]));
-      log(chalk.magenta(innerText[4]) + '\t' + chalk.yellow(innerText[5]));
-      log('score : ' + chalk.cyan(innerText[2]));
+      log(chalk.magenta(innerText[0]) + '\t' + chalk.cyan(innerText[1]));
+      log(chalk.magenta(innerText[4]) + '\t' + chalk.cyan(innerText[5]));
+      log('score : ' + chalk.yellow(innerText[2]));
       log('game time : ' + chalk.gray(innerText[3]));
     } else {
       // event heading
