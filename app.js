@@ -10,6 +10,16 @@ if (!process.env.NODE_ENV) {
 async function main(sport) {
   let browserInstance;
   try {
+    await new Promise(function(resolve, reject) {
+      require("dns").resolve("www.google.com", function(err) {
+        if (err) {
+          reject("Internet Connection appears to be offline");
+        } else {
+          resolve();
+        }
+      });
+    });
+
     let spinner = new Spinner(`processing your request for ${sport} .... %s`);
     spinner.setSpinnerString("|/-\\");
     spinner.start();
@@ -33,22 +43,23 @@ async function main(sport) {
     await browserInstance.close();
     browserInstance = null;
   } catch (error) {
+    error.toString().match(/Internet Connection/i) ? log(chalk.red("INTERNET OFFLINE : " + error)) : log(chalk.red("SCRIPT CRASHED : " + error));
     if (browserInstance) {
       await browserInstance.close();
     }
-    console.error(error);
   }
 }
 
-async function Commentry() { }
+async function Commentry() {}
 
 async function footballScores(page) {
-
   // events
   let events = await page.evaluate(() => {
-    let eventsObject = document.getElementById('events').children;
+    let eventsObject = document.getElementById("events").children;
     let eventsArray = [];
-    for (key in eventsObject) { eventsArray.push(eventsObject[key].innerText) }
+    for (key in eventsObject) {
+      eventsArray.push(eventsObject[key].innerText);
+    }
     return eventsArray;
   });
   for (let i = 0; i < events.length; i++) {
@@ -59,14 +70,14 @@ async function footballScores(page) {
 
     if (innerText.match(/summary/i)) {
       // event
-      innerText = innerText.trim().split('\n');
+      innerText = innerText.trim().split("\n");
       innerText.pop();
       innerText.pop();
       // innerText = innerText.toString().replace('/,/g', ' ');
-      log(chalk.magenta(innerText[0]) + '\t' + chalk.cyan(innerText[1]));
-      log(chalk.magenta(innerText[4]) + '\t' + chalk.cyan(innerText[5]));
-      log('score : ' + chalk.yellow(innerText[2]));
-      log('game time : ' + chalk.gray(innerText[3]));
+      log(chalk.magenta(innerText[0]) + "\t" + chalk.cyan(innerText[1]));
+      log(chalk.magenta(innerText[4]) + "\t" + chalk.cyan(innerText[5]));
+      log("score : " + chalk.yellow(innerText[2]));
+      log("game time : " + chalk.gray(innerText[3]));
     } else {
       // event heading
       console.log("\n");
@@ -77,11 +88,9 @@ async function footballScores(page) {
 }
 
 async function cricketScores(page) {
-
   // series
   let events = await page.$$(".scoreCollection.cricket");
   for (let i = 0; i < events.length; i++) {
-
     // heading
     let heading = await events[i].$eval(".scoreCollection__header", node => node.innerText);
     heading = heading.trim();

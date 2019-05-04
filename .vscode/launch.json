@@ -10,7 +10,7 @@
       "name": "Launch Program",
       "program": "${workspaceFolder}/test.js",
       "env": {
-        "sport": "football",
+        "sport": "cricket",
         "NODE_ENV": "development"
       }
     }

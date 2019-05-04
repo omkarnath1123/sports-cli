@@ -8,7 +8,7 @@ module.exports = class Puppeteer {
         // slowMo: 100,
         ignoreHTTPSErrors: true,
         headless: env === "production",
-        // executablePath: '/Users/omkarnath/Applications/Google Chrome.app',
+        // executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
         args: [
           "--ash-host-window-bounds=1920x1080",
           "--window-size=1920,1048",
